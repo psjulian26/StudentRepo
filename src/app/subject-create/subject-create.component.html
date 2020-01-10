@@ -1,0 +1,15 @@
+<div class="container">    
+        <h3>Add Subject</h3>
+      
+        <div class="form-group">
+            <label for="subname">Subject Name</label>
+            <input type="text" class="form-control" id="subname" [(ngModel)]="data.subname" placeholder="Enter Subject Name" required/>
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <input type="text" class="form-control" id="description" [(ngModel)]="data.description" placeholder="Enter Description" required/>
+        </div>
+       
+        <button type="submit" class="btn btn-primary" (click)="submitForm()">Add</button>
+        <button type="submit" class="btn btn-primary ml-1" [routerLink]="[ '/subjects']">Cancel</button>
+</div>    

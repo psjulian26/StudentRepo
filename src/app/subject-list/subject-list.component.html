@@ -1,0 +1,60 @@
+<div class="container">
+    <!-- <div class="list-group">
+       <button type="button" class="list-group-item list-group-item-action active"> -->
+         <h3>Subjects</h3>
+       <!-- </button> -->
+     <!-- </div> -->
+     <table class="table table-hover">
+       
+       <thead class="thead-dark">
+         <tr>
+           <th scope="col">Subject Id</th>
+           <th scope="col">Subject Name</th>
+           <th scope="col">Subject Description</th>
+           <th scope="col">Actions</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor="let subs of SubData.subjects">
+            <td >{{subs.subid}} </td>  
+            <td>{{subs.subname}} </td> 
+            <td>{{subs.description}} </td>   
+            <td style="display: flex">               
+                <button type="button" class="btn btn-primary btn-sm ml-2" (click)="getSubject(subs,0)">Edit</button>
+                <button type="button" class="btn btn-primary btn-sm ml-2" (click)="getSubject(subs,1)"> Delete</button>               
+            </td>     
+          </tr>
+       </tbody>
+     </table>
+ 
+     <!-- for collapse -->
+     <p>
+        
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#createForm" aria-expanded="false" aria-controls="createForm">
+          Add Subjects 2
+        </button>
+        <button type="submit" class="btn btn-primary ml-1" [routerLink]="[ '/list']">Back</button>
+      </p>
+      <div class="collapse" id="createForm">
+        <div class="card card-body">
+            <div class="container">
+                <h3>Add Subject</h3>
+        
+                <div class="form-group">
+                    <label for="subname">Subject Name</label>
+                    <input type="text" class="form-control" id="subname"  placeholder="Enter Subject Name" required/>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input type="text" class="form-control" id="description"  placeholder="Enter Description" required/>
+                </div>
+            
+                <button type="submit" class="btn btn-primary" >Add</button>
+                <button type="submit" class="btn btn-primary ml-1" data-toggle="collapse" data-target="#createForm" aria-expanded="false" aria-controls="createForm">Cancel</button>
+            </div>
+        </div>
+      </div>
+
+      <!-- <button type="button" class="btn btn-primary" [routerLink]="[ '/addSub']" disabled>Add Subject</button>
+      <button type="submit" class="btn btn-warning ml-1" [routerLink]="[ '/list']">Back</button> -->
+   </div>

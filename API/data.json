@@ -1,0 +1,58 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Test Dummy",
+      "year": "1",
+      "address": "Street 1",
+      "subjects": [
+        {
+          "subid": 1,
+          "subname": "Subject 1",
+          "description": "vxvv xvxbxb",
+          "id": 1
+        },
+        {
+          "subid": 5,
+          "subname": "Subject 5",
+          "description": "xcc xczcxzc",
+          "id": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Dummy Test",
+      "year": "2",
+      "address": "Street 2",
+      "subjects": [
+        {
+          "subid": 2,
+          "subname": "Subject 2",
+          "description": "qwert erty",
+          "id": 2
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Dum Dummy",
+      "year": "3",
+      "address": "Street 3",
+      "subjects": [
+        {
+          "subid": 3,
+          "subname": "Subject 3",
+          "description": "asdf hjkl",
+          "id": 3
+        }
+      ]
+    },
+    {
+      "name": "QWerty",
+      "year": "23",
+      "address": "wedcxcvcc",
+      "id": 4
+    }
+  ]
+}
